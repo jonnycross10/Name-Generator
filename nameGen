@@ -1,0 +1,13 @@
+import java.util.Random;
+
+public class nameGen
+{
+    public static void main (String[] args)
+    {
+        Random rand = new Random();
+        String[] firstName = new String[]{"Adam", "Jonny", "Zach", "James", "Robert", "Micheal", "William", "David", "Richard", "Joseph", "Thomas", "Alex"};
+        String[] lastName = new String[]{"Smith", "Cross", "Johnson", "Williams", "Jones", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson", "Thomas"};
+        System.out.println("Your name is: " + firstName[rand.nextInt(firstName.length)] + " " + lastName[rand.nextInt(lastName.length)]);
+        //next int allows you to set bounds for integers
+    }
+}
